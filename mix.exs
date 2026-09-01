@@ -7,7 +7,7 @@ defmodule Airports.Mixfile do
     [
       app: :airports,
       version: "1.0.0",
-      elixir: "~> 1.10",
+      elixir: "~> 1.16",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       deps: deps(),
