@@ -5,7 +5,7 @@ defmodule AirportsTest do
     lines_count_from_source =
       [__DIR__, "../priv", "airports.csv"]
       |> Path.join()
-      |> File.stream!([], :line)
+      |> File.stream!(:line)
       |> Enum.count()
       # minus header
       |> Kernel.-(1)
